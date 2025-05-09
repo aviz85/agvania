@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tomato">
+            <div class="tomato-leaf"></div>
+            <div class="timer-display">20:00</div>
+            <div class="task-display">Enter your task</div>
+        </div>
+        
+        <div class="controls">
+            <input type="text" id="task-input" placeholder="What are you working on?">
+            <button id="start-btn">Start</button>
+            <button id="complete-btn" disabled>Complete Early</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <div class="stats">
+            <span class="streak-count">Streak: 0</span>
+        </div>
+    </div>
+    
+    <div class="confetti-container" id="confetti-container"></div>
+
+    <div class="notification" id="notification">
+        <p id="notification-message">Great job!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
