@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="background-container">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        <div class="floating-shape shape4"></div>
+        <div class="floating-shape shape5"></div>
+    </div>
+
     <div class="container">
         <div class="tomato">
             <div class="tomato-leaf"></div>
@@ -17,9 +25,11 @@
         
         <div class="controls">
             <input type="text" id="task-input" placeholder="What are you working on?">
-            <button id="start-btn">Start</button>
-            <button id="complete-btn" disabled>Complete Early</button>
-            <button id="reset-btn">Reset</button>
+            <div class="buttons-container">
+                <button id="start-btn"><i class="fas fa-play"></i> Start</button>
+                <button id="complete-btn" disabled><i class="fas fa-check"></i> Complete Early</button>
+                <button id="reset-btn"><i class="fas fa-redo"></i> Reset</button>
+            </div>
         </div>
 
         <div class="stats">
